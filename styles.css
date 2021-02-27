@@ -1,3 +1,9 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
 .page {
 	background-color:darkcyan;
 }
@@ -10,6 +16,7 @@
 	color:white;
 	font-family: 'Abel', sans-serif;
 	text-align:center;
+	padding-top:30px;
 }
 
 .chapter {
@@ -34,7 +41,7 @@
 
 .content {
 	min-height:600px;
-        background-color:darkcyan;
+    background-color:darkcyan;
 	margin:20px;
 	padding:10px;
 }
@@ -53,7 +60,7 @@ hr {
 }
 
 img {
-	padding:50px;
+	padding:30px;
 	max-width:890px;
 	margin-left:auto;
 	margin-right:auto;
@@ -74,9 +81,9 @@ img {
 }
 
 .caption {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
+		padding-top:10px;
+		display:flex;
+		justify-content:center;
 }
 
 .responsive {
@@ -87,6 +94,45 @@ img {
 	margin-right:auto;
 }
 
+#insper-head {
+	padding-left:40px;
+	padding-top:20px;
+	color:whitesmoke;
+	font-family: 'Abel', sans-serif;
+	font-size:40px;
+}
+
+.insper-p {
+	padding-left:40px;
+	color:whitesmoke;
+	font-family: 'Vollkorn', serif;
+}
+
+.cover {
+	width: 100%;
+	height: auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#airborn {
+	height:auto;
+	padding:20px;
+	color:whitesmoke;
+}
+
+#peter {
+	height:auto;
+	padding:20px;
+	color:whitesmoke;
+}
+
+#hugo {
+	height:auto;
+	padding:20px;
+	color:whitesmoke;
+}
 
 .footer {
 	background-color:343A40;
@@ -105,3 +151,61 @@ img {
 	text-decoration:none;
 }
 
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+	.header {
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.caption {
+		padding-top:10px;
+		display:flex;
+		justify-content:center;
+	}
+
+	#airborn {
+		height:auto;
+	}
+
+	#peter {
+		height:auto;
+	}
+
+	#hugo {
+		height:auto;
+	}	
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 700px) {
+	.cover {
+		max-width:300px;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	#airborn {
+		height:500px;
+		padding-top:30px;
+	}
+
+	#peter {
+		height:500px;
+		padding-top:30px;
+	}
+
+	#hugo {
+		height:500px;
+		padding-top:30px;
+		margin-left:280px;
+	}
+
+	.cover {
+		max-width:300px;
+		height:auto;
+		float:left;
+	}
+}
